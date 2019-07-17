@@ -2,7 +2,7 @@ package com.test.training;
 
 /**
  * created by Administrator on 2019/7/16
- * describe:
+ * describe: 循环测试
  */
 public class TestBreak {
     public static void main(String[] args) {
