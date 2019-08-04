@@ -32,6 +32,7 @@ public class TestList_Set_Map {
         }
 
         Set set = new HashSet();
+        set.add("aa");
 
         LinkedList ll = new LinkedList();
 
@@ -68,5 +69,28 @@ public class TestList_Set_Map {
         }
         System.out.println(setvec.size() + "========" + setvec);
 
+        //TreeMap
+        Map<String, String> treeMap = new TreeMap<String, String>();
+        treeMap.put("a","你好");
+        treeMap.put("b","我是tom");
+        treeMap.put("c","你好");
+        treeMap.put("d","我是bob");
+        treeMap.put("e","大家好才是真的好");
+        System.out.println(treeMap.toString());
+        for (String tree : treeMap.keySet()){
+            System.out.println("key = " + tree + ", value = " + treeMap.get(tree));
+        }
+
+        //TreeMap
+        Map<String, String> hashMap = new HashMap<String, String>();
+        hashMap.put("a","你好");
+        hashMap.put("b","我是tom");
+        hashMap.put("c","你好");
+        hashMap.put("d","我是bob");
+        hashMap.put("e","大家好才是真的好");
+        System.out.println(hashMap.toString());
+        for (String tree : hashMap.keySet()){
+            System.out.println("key = " + tree + ", value = " + hashMap.get(tree));
+        }
     }
 }
