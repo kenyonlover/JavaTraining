@@ -4,7 +4,7 @@
 <students>
 
     <student number="heima_0001">
-        <name>tom</name>
+        <name id="name1">tom</name>
         <age>18</age>
         <sex>male</sex>
     </student>
