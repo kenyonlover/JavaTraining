@@ -8,6 +8,9 @@ import org.jsoup.select.Elements;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * jsoup快速入门
+ */
 public class Jsoup_demo1 {
     public static void main(String[] args) throws IOException {
         //获取document对象
