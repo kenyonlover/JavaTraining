@@ -38,6 +38,12 @@
       <artifactId>jsoup</artifactId>
       <version>1.11.2</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/cn.wanghaomiao/JsoupXpath -->
+    <dependency>
+      <groupId>cn.wanghaomiao</groupId>
+      <artifactId>JsoupXpath</artifactId>
+      <version>0.3.2</version>
+    </dependency>
   </dependencies>
 
   <build>
