@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        * 分析：
+        *   点击超链接或者图片，需要换一张 图片
+        *   1. 给超链接和图片绑定单击时间
+        *   2.重新设置图片的src属性
+        * */
+        window.onload = function () {
+            //1. 给超链接和图片绑定单击时间
+            var img = document.getElementById("checkCode");
+            img.onclick = function () {
+                //加时间戳(欺骗服务器，防止服务器缓存不刷新图片)
+                var date = new Date().getTime();
+                img.src = "/JavaTraining/verificationCode1?"+date;
+            }
+            var ch = document.getElementById("change");
+            ch.onclick = function () {
+                //加时间戳(欺骗服务器，防止服务器缓存不刷新图片)
+                var date = new Date().getTime();
+                img.src = "/JavaTraining/verificationCode1?"+date;
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="checkCode" src="/JavaTraining/verificationCode1" />
+
+    <a id="change" href="">看不清换一张</a>
+</body>
+</html>
